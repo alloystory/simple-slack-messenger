@@ -1,9 +1,11 @@
 {
   "name": "simple-slack-messenger",
+  "description": "A simple package to send Slack messages",
   "version": "0.1.1",
   "repository": "github:alloystory/simple-slack-messenger",
   "author": "Aloysius (https://alloystory.github.io/)",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.2.3",
@@ -13,7 +15,13 @@
   "dependencies": {
     "@slack/webhook": "^6.1.0"
   },
+  "keywords": [
+    "Slack"
+  ],
   "scripts": {
-    "build": "tsc --build --clean && tsc --build"
+    "build": "tsc --build --clean && tsc --build",
+    "prepare": "yarn build",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
   }
 }
