@@ -18,6 +18,7 @@ export class SlackChannel {
   /**
    * Sends a SlackMessage to the channel.
    * @param message the SlackMessage to send.
+   * @throws error if the Slack message cannot be sent.
    */
   async send(message: SlackMessage): Promise<void> {
     await this.webhook.send(message.get());
