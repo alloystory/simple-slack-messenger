@@ -1,7 +1,7 @@
 {
   "name": "simple-slack-messenger",
   "description": "A simple package to send Slack messages",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "github:alloystory/simple-slack-messenger",
   "author": "Aloysius (https://alloystory.github.io/)",
   "main": "lib/index.js",
