@@ -1,6 +1,7 @@
 {
   "name": "simple-slack-messenger",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "repository": "github:alloystory/simple-slack-messenger",
   "author": "Aloysius (https://alloystory.github.io/)",
   "main": "index.js",
   "license": "MIT",
